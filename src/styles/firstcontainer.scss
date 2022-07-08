@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@700&family=Poppins&display=swap');
+.home__container {
+  margin: 0 auto;
+  background: url(../assets/thisisengineering.png);
+  min-height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+  position: relative;
+  .give__container {
+    padding-top: 7rem;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .give__container > h1 {
+    font-family: 'lato', sans-serif;
+    color: #038c33;
+    font-size: 48px;
+  }
+  .give__container > p {
+    color: #1f6036;
+    font-size: 16px;
+    font-family: 'lato', sans-serif;
+  }
+  .give__container > p > a {
+    text-decoration: none;
+    color: #8fbf26;
+    font-family: 'Lato', sans-serif;
+  }
+
+  > .blur {
+    width: 100%;
+    height: 2.5rem;
+    background: rgba(0, 52, 18, 0.35);
+    backdrop-filter: blur(16px);
+    margin-top: 10%;
+    position: absolute;
+    bottom: 0;
+    @media screen and (max-width: 1024px) {
+      display: none;
+      .give__container {
+        h1 {
+          font-family: 'lato', sans-serif;
+          color: #038c33;
+          font-size: 48px;
+        }
+        p {
+          color: #1f6036;
+          font-size: 16px;
+          font-family: 'lato', sans-serif;
+        }
+        a {
+          text-decoration: none;
+          color: #8fbf26;
+          font-family: 'Lato', sans-serif;
+        }
+        .btn__box {
+          .btn {
+            background: #038c33;
+            padding: 0.7rem 2.2rem;
+            border: #038c33;
+            border-radius: 5%;
+            color: white;
+            font-size: 14px;
+          }
+          .btn__container {
+            background: #add9bd;
+            padding: 0.7rem 2.3rem;
+            border: #add9bd;
+            border-radius: 5%;
+            color: #038c33;
+            margin-left: 0.8rem;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.btn__box {
+  height: 2rem;
+}
+
+.btn {
+  background: #038c33;
+  padding: 0.7rem 2.2rem;
+  border: #038c33;
+  border-radius: 5%;
+  color: white;
+  font-size: 14px;
+}
+.btn__container {
+  background: #add9bd;
+  padding: 0.7rem 2.3rem;
+  border: #add9bd;
+  border-radius: 5%;
+  color: #038c33;
+  margin-left: 0.8rem;
+  font-size: 14px;
+}
+.btn__head {
+  :hover {
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #038c33;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+  }
+}
+
+.btn__head {
+  background: #038c33;
+  padding: 0.7rem 2.3rem;
+  border: #add9bd;
+  border-radius: 5%;
+  color: white;
+  margin-left: 0.8rem;
+}

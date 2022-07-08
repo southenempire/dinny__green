@@ -1,0 +1,111 @@
+#navigation {
+  //background-color: #003412;
+  .nav {
+    background-color: #003412;
+    display: flex;
+    align-items: center;
+    &-logo {
+      // height: 60px;
+      left: 45px;
+      margin-left: 35px;
+    }
+    &-menu {
+      display: none;
+    }
+    .icon {
+      i {
+        color: #038c33;
+        position: absolute;
+        top: 55px;
+        right: 45px;
+        font-size: 30px;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      padding: 0.5rem 7rem;
+      &-logo {
+        flex: 0.2;
+      }
+      &-menu {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        flex: 1;
+        padding: 1rem 0.2rem;
+        align-items: center;
+        .btn {
+          font-weight: 500;
+          font-size: 14px;
+          background: #038c33;
+          padding: 0.7rem 1.9rem;
+          border-radius: 5px;
+        }
+      }
+      &-links {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        i {
+          margin-left: 0.2rem;
+        }
+      }
+      &-links:hover {
+        color: #038c33;
+      }
+
+      .icon {
+        display: none;
+        i {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    background-color: #003412;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    ul {
+      text-align: center;
+      list-style: none;
+
+      li {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 1rem;
+
+        a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 18px;
+          color: #fff;
+          display: block;
+          transition: 0.3s;
+        }
+      }
+      li a:hover,
+      li a:focus {
+        color: #038c33;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+}
